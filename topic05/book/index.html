@@ -1,23 +1,27 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <style>
     
 
@@ -63,173 +67,133 @@ h3 {
 
 
   </style>
+</head>
 
-  <body class="lab">
+<body>
 
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
-  <div class="uk-offcanvas-content">
-    <div id="offcanvas-usage" uk-offcanvas>
-      <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav">
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic01/book-1/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-01
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic02/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-02
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic03/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-03
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic04/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-04
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic05/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-05
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic06/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-06
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic07/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-07
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic08/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-08
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic09/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-09
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic10/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-10
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic11/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-11
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic12/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-12
-                </a>
-              </li>
-            
-          
-        </ul>
-      </div>
-    </div>
+      <a href="../index.html"> Images  </a>
+    
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-05">
+        Lab-05
+      </a>
+    
+      <a class="item" data-tab="Exercise Solutions">
+        Exercise Solutions
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="06">
+        06
+      </a>
+    
+      <a class="item" data-tab="07.Exercises">
+        07.Exercises
+      </a>
+    
   </div>
+</div>
 
-
-    <div uk-sticky>
-      <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
-                   uk-tooltip></a></li>
-            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
-                                     pos="bottom" uk-tooltip>Images </a></li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
-              uk-switcher="connect: .switcher-container">
-            
-              <li><a href="#">Lab-05</a></li>
-            
-              <li><a href="#">Exercise Solutions</a></li>
-            
-              <li><a href="#">02</a></li>
-            
-              <li><a href="#">03</a></li>
-            
-              <li><a href="#">04</a></li>
-            
-              <li><a href="#">05</a></li>
-            
-              <li><a href="#">06</a></li>
-            
-              <li><a href="#">07.Exercises</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container uk-container-expand">
-      <ul class="uk-switcher switcher-container">
-        
-          <li> <h1>Summary</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic01/book-1/index.html">Lab-01 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic02/book/index.html">Lab-02 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic03/book/index.html">Lab-03 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic04/book/index.html">Lab-04 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic05/book/index.html">Lab-05 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic06/book/index.html">Lab-06 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic07/book/index.html">Lab-07 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic08/book/index.html">Lab-08 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic09/book/index.html">Lab-09 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic10/book/index.html">Lab-10 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic11/book/index.html">Lab-11 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic12/book/index.html">Lab-12 </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-05">
+          <h1>Summary</h1>
 <p>MapsActivity · api keys · GoogleMap · OnMapReadyCallback · LatLng · addMarker · moveCamera · Location · MarkerOptions · onBackPressed</p>
-</li>
-        
-          <li> <h1>Exercise Solutions</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="Exercise Solutions">
+          <h1>Exercise Solutions</h1>
 <h2>Exercise 1</h2>
 <p>As a user, create a new placemark with a title + image. Now edit the placemark and change the title - and update the placemark. Notice that the title has changed in PlacemarkList. </p>
 <p>Edit the placemark and change the image - and update the placemark. Go back in to edit the placemark again - what image do you see?</p>
@@ -311,9 +275,11 @@ Lab-12
       itemView.setOnClickListener { listener.onPlacemarkClick(placemark) }
     }
 ...</code></pre>
-</li>
-        
-          <li> <h1>Location Resources</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>Location Resources</h1>
 <p>First introduce a new button to set the location:</p>
 <h2>strings.xml</h2>
 <pre><code>  &lt;string name=&quot;button_location&quot;&gt;Set Location&lt;/string&gt;</code></pre>
@@ -335,9 +301,11 @@ Lab-12
     }</code></pre>
 <p>Build &amp; run the application now and make sure the button appears as expected</p>
 <p><img src="img/02.png" alt=""></p>
-</li>
-        
-          <li> <h1>Google Maps Activity</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Google Maps Activity</h1>
 <p>Briefly review then general guide to incorporating google maps here:</p>
 <ul>
 <li><a href="https://developer.android.com/training/maps/index.html">https://developer.android.com/training/maps/index.html</a></li>
@@ -495,9 +463,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }</code></pre>
 <p>If they key is correctly entered, the map should appear:</p>
 <p><img src="img/04.png" alt=""></p>
-</li>
-        
-          <li> <h1>Tidyup Generated code</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>Tidyup Generated code</h1>
 <p>We might remove some of the additional comments generated by the studio wizard (read them first)</p>
 <h2>AndroidManifest.xml</h2>
 <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
@@ -579,9 +549,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(wit, 16f))
   }</code></pre>
 <p><img src="img/05.png" alt=""></p>
-</li>
-        
-          <li> <h1>Location Model</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>Location Model</h1>
 <p>Introduce this new class alongside the PlacemarkModel class:</p>
 <h2>PlacemarkModel</h2>
 <pre><code>@Parcelize
@@ -681,9 +653,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     map.moveCamera(CameraUpdateFactory.newLatLngZoom(loc, location.zoom))
   }
 }</code></pre>
-</li>
-        
-          <li> <h1>Recover Location from Activity</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="06">
+          <h1>Recover Location from Activity</h1>
 <p>Currently, when you press back from the MapsActivity, any change made in the marker by the user us lost. We need to address this now.</p>
 <p>First, make these changes to ActivityPlacemark class members:</p>
 <h2>PlacemarkActivity</h2>
@@ -752,9 +726,11 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     super.onBackPressed()
   }</code></pre>
 <p>Try this now - and verify that if you change the location - and then immediately press back and then renter the map again - the location is remembered.</p>
-</li>
-        
-          <li> <h1>Solution</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="07.Exercises">
+          <h1>Solution</h1>
 <p>Placemark application so far:</p>
 <ul>
 <li><a href="archives/archive.zip">archive.zip</a></li>
@@ -767,26 +743,67 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 <h2>Exercise 2</h2>
 <p>When you leave the PlacemarkActiviy, the location is not currently stored in the PlacemarkModel correctly. So when you edit a placemark, it is back at the default location.</p>
 <p>Fix this by making location part of the placemark model, so we can edit and change the locations for existing markers.</p>
-</li>
-        
-      </ul>
-    </div>
 
-    <script>
-      $(document).ready(function() {
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+  $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
   const $images = $('.lab img');
   jQuery.each($images, function(i) {
     if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
+      $(divLabel).insertBefore($images[i]);
     }
   });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>

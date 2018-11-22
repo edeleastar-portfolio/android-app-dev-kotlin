@@ -1,23 +1,27 @@
-
-
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/css/uikit.min.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.6/js/uikit-icons.min.js"></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.css"
+        type="text/css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+        rel="stylesheet"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.10/semantic.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/java.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/kotlin.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <style>
     
 
@@ -63,175 +67,137 @@ h3 {
 
 
   </style>
+</head>
 
-  <body class="lab">
+<body>
 
+
+
+<div class="ui fixed top pointing inverted stackable menu labmenu">
+  <header class="header item">
+    <i id="toc" class="sitemap icon"></i>
     
-  <div class="uk-offcanvas-content">
-    <div id="offcanvas-usage" uk-offcanvas>
-      <div class="uk-offcanvas-bar">
-        <button class="uk-offcanvas-close" type="button" uk-close></button>
-        <ul class="uk-nav">
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic01/book-1/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-01
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic02/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-02
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic03/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-03
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic04/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-04
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic05/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-05
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic06/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-06
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic07/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-07
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic08/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-08
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic09/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-09
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic10/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-10
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic11/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-11
-                </a>
-              </li>
-            
-          
-            
-              <li>
-                <a class="item" href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic12/book/index.html">
-  <i class="fas fa-flask " style="color:#00BCD4"> </i>
-Lab-12
-                </a>
-              </li>
-            
-          
-        </ul>
-      </div>
-    </div>
+      <a href="../index.html"> Rooms  </a>
+    
+  </header>
+  <div class="right tab-menu menu">
+    
+      <a class="item" data-tab="Lab-07">
+        Lab-07
+      </a>
+    
+      <a class="item" data-tab="01">
+        01
+      </a>
+    
+      <a class="item" data-tab="02">
+        02
+      </a>
+    
+      <a class="item" data-tab="03">
+        03
+      </a>
+    
+      <a class="item" data-tab="04">
+        04
+      </a>
+    
+      <a class="item" data-tab="05">
+        05
+      </a>
+    
+      <a class="item" data-tab="06">
+        06
+      </a>
+    
+      <a class="item" data-tab="07">
+        07
+      </a>
+    
+      <a class="item" data-tab="08.Exercises">
+        08.Exercises
+      </a>
+    
   </div>
+</div>
 
-
-    <div uk-sticky>
-      <nav class="uk-navbar">
-        <div class="uk-navbar-left">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill">
-            <li><a href="#offcanvas-usage" uk-icon="icon: menu" , uk-toggle title="Switch Lab" pos="bottom"
-                   uk-tooltip></a></li>
-            <li class="uk-active"><a href="../index.html" uk-icon="icon: chevron-up" uk-toggle title="Parent Topic"
-                                     pos="bottom" uk-tooltip>Rooms </a></li>
-          </ul>
-        </div>
-        <div class="uk-navbar-right">
-          <ul class="uk-subnav uk-background-secondary uk-subnav-pill"
-              uk-switcher="connect: .switcher-container">
-            
-              <li><a href="#">Lab-07</a></li>
-            
-              <li><a href="#">01</a></li>
-            
-              <li><a href="#">02</a></li>
-            
-              <li><a href="#">03</a></li>
-            
-              <li><a href="#">04</a></li>
-            
-              <li><a href="#">05</a></li>
-            
-              <li><a href="#">06</a></li>
-            
-              <li><a href="#">07</a></li>
-            
-              <li><a href="#">08.Exercises</a></li>
-            
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="uk-container uk-container-expand">
-      <ul class="uk-switcher switcher-container">
-        
-          <li> <h1>Objectives</h1>
+<div class="ui pushable">
+  <div class="ui inverted labeled icon left inline vertical sidebar menu">
+    <br><br>
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic01/book-1/index.html">Lab-01 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic02/book/index.html">Lab-02 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic03/book/index.html">Lab-03 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic04/book/index.html">Lab-04 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic05/book/index.html">Lab-05 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic06/book/index.html">Lab-06 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic07/book/index.html">Lab-07 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic08/book/index.html">Lab-08 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic09/book/index.html">Lab-09 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic10/book/index.html">Lab-10 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic11/book/index.html">Lab-11 </a>
+      
+    
+      
+        <a class="item"
+           href="https://edeleastar-portfolio.github.io/android-app-dev-kotlin//topic12/book/index.html">Lab-12 </a>
+      
+    
+  </div>
+  <div class="pusher" tabindex="-1">
+    <div class="ui basic segment">
+      <br>
+      
+        <div class="ui tab segment lab" data-tab="Lab-07">
+          <h1>Objectives</h1>
 <p>Extend the application to include a new maps view</p>
-</li>
-        
-          <li> <h1>Exercises</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="01">
+          <h1>Exercises</h1>
 <h2>Exercise 1</h2>
 <p>Change back to using the PlacemarkMemStore instead of PlacemarkStoreRoom. The only change you need to make should be in MainApp.</p>
 <p>Try some experiments to make sure the persistence is working as expected:</p>
@@ -309,9 +275,11 @@ Lab-12
 <pre><code>  ext.kotlin_version = &#39;1.2.10&#39;</code></pre>
 <p>Change it to:</p>
 <pre><code>  ext.kotlin_version = &#39;1.2.21&#39;</code></pre>
-</li>
-        
-          <li> <h1>PlacemarkMapsActivity</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="02">
+          <h1>PlacemarkMapsActivity</h1>
 <h2>Menu</h2>
 <p>Create a new menu option in the <code>main_menu.xml</code>:</p>
 <h2>res/menu/menu_main.xml</h2>
@@ -434,9 +402,11 @@ class PlacemarkMapsActivity : AppCompatActivity() {
   }</code></pre>
 <p>When the new menu is selected - you will get a (blank) new activity:</p>
 <p><img src="img/04.png" alt=""></p>
-</li>
-        
-          <li> <h1>Simplify PlacemarkMapsActivity</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="03">
+          <h1>Simplify PlacemarkMapsActivity</h1>
 <p>The wizards in Studio often generate additional options and code that is not really appropriate depending on the app you are building.</p>
 <p>Simplify PlacemarkMapsActivity now to the following:</p>
 <h2>PlacemarkMapsActivity</h2>
@@ -488,9 +458,11 @@ class PlacemarkMapsActivity : AppCompatActivity() {
 <h2>res/values/strings.xml</h2>
 <pre><code>  &lt;string name=&quot;title_activity_placemark_maps&quot;&gt;Map of All Placemarks &lt;/string&gt;</code></pre>
 <p>Our new view will be a single map showing all of the placemarks we have set.</p>
-</li>
-        
-          <li> <h1>content_placemark_maps</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="04">
+          <h1>content_placemark_maps</h1>
 <p>Notice that the wizard generated 2 layouts:</p>
 <ul>
 <li>activity_placemark_maps.xml</li>
@@ -621,9 +593,11 @@ class PlacemarkMapsActivity : AppCompatActivity() {
 }</code></pre>
 <p>The map should now display correctly:</p>
 <p><img src="img/13.png" alt=""></p>
-</li>
-        
-          <li> <h1>Markers</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="05">
+          <h1>Markers</h1>
 <p>Currently out new view looks like this:</p>
 <p><img src="img/14.png" alt=""></p>
 <p>We can start to configure the map but introducing a new method to for this purpose:</p>
@@ -706,9 +680,11 @@ class PlacemarkMapsActivity : AppCompatActivity() {
       }
     }
   }</code></pre>
-</li>
-        
-          <li> <h1>CardView</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="06">
+          <h1>CardView</h1>
 <p>We already have a CardView in place. We now start to work inside it. First, install a ConstraintLayout inside the Card:</p>
 <p><img src="img/19.png" alt=""></p>
 <p>Then, insert an ImageView:</p>
@@ -799,9 +775,11 @@ class PlacemarkMapsActivity : AppCompatActivity() {
     app:layout_constraintStart_toStartOf=&quot;parent&quot;
     app:layout_constraintTop_toTopOf=&quot;parent&quot; /&gt;
 &lt;/android.support.constraint.ConstraintLayout&gt;</code></pre>
-</li>
-        
-          <li> <h1>Marker Listener</h1>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="07">
+          <h1>Marker Listener</h1>
 <p>Back in the class, implement the OnMarkerListener interface:</p>
 <h2>PlacemarkMapsActivity</h2>
 <pre><code>class PlacemarkMapsActivity : AppCompatActivity(), GoogleMap.OnMarkerClickListener {</code></pre>
@@ -825,9 +803,11 @@ class PlacemarkMapsActivity : AppCompatActivity() {
   }</code></pre>
 <p>Run the app now - and if you click on a marker, it should display its title in the card:</p>
 <p><img src="img/23.png" alt=""></p>
-</li>
-        
-          <li> <h2>Solution</h2>
+
+        </div>
+      
+        <div class="ui tab segment lab" data-tab="08.Exercises">
+          <h2>Solution</h2>
 <p>Placemark application so far:</p>
 <ul>
 <li><a href="archives/archive.zip">archive.zip</a></li>
@@ -843,26 +823,67 @@ class PlacemarkMapsActivity : AppCompatActivity() {
 <h2>Exercise 2</h2>
 <p>How would you go about showing the description + the image whenever a marker is selected?</p>
 <p>This is a challenge to far at the moment, so dont spend too much time on it. We will address it on a later lab.</p>
-</li>
-        
-      </ul>
-    </div>
 
-    <script>
-      $(document).ready(function() {
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on('keydown', function(e) {
+  e = e || window.event;
+  var nextTab;
+  switch (e.which || e.keyCode) {
+    case 37: // left
+      nextTab = $('.tab-menu a[data-tab].active').prev('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').last();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+
+    case 39: // right
+      nextTab = $('.tab-menu a[data-tab].active').next('a[data-tab]');
+      if (!nextTab.length) nextTab = $('.tab-menu a[data-tab]').first();
+      nextTab.click();
+      $('.pusher').focus();
+      break;
+  }
+});
+
+  $(document).ready(function() {
+  $('img').addClass('ui image');
+
+  $('.ui.embed').embed();
+
   const $images = $('.lab img');
   jQuery.each($images, function(i) {
     if ($images[i].alt.length > 0) {
-      const divImg = $(document.createElement('div')).addClass('');
+      const divImg = $(document.createElement('div')).addClass(
+        'ui basic segment',
+      );
       $($images[i]).wrap(divImg);
-      const divLabel = $(document.createElement('div')).addClass('uk-label uk-text-lowercase');
+      const divLabel = $(document.createElement('div')).addClass(
+        'ui blue ribbon label',
+      );
       divLabel.append($images[i].alt);
-      $(divLabel).insertAfter($images[i]);
-      $('<br>').insertAfter($images[i]);
+      $(divLabel).insertBefore($images[i]);
     }
   });
+
+  $('.ui.menu .item').tab({
+    history: true,
+    historyType: 'hash',
+  });
+
+  $('.popup').popup();
+
+  $('.ui.sidebar')
+    .sidebar({ context: $('.pushable') })
+    .sidebar('setting', 'transition', 'slide out')
+    .sidebar('attach events', '#toc');
 });
 
-    </script>
-  </body>
+</script>
+</body>
 </html>
